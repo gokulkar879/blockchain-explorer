@@ -6,7 +6,7 @@ function Transactions() {
   
     const handleClick = (id) => {
         setcurrState(2)
-       setTransaction(id)
+       setTransaction(transactions[id])
     }
 
   return (
