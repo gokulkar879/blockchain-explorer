@@ -1,38 +1,193 @@
-.App {
+body {
+  background-color: #0e1217;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* from */
+
+.form {
+    min-height: 8rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.form > form {
+  display: flex;
+  flex-direction: column;
+  min-height: 10rem;
+  padding: 1rem;
+  justify-content: space-around;
+  border: 2.5px solid rgb(11, 56, 102);
+}
+
+.form > form > label {
+   font-size: 1.5rem;
+   font-weight: bold;
+   letter-spacing: 1.3px;
+   color: rgb(194, 204, 220);
+   text-transform: uppercase;
+}
+
+.form > form > input {
+  font-size: 1.3rem;
+  letter-spacing: 1.3px;
+  color: rgb(207, 207, 207);
+  outline: none;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.form > form > button {
+   width: 100px;
+   margin: 0 auto;
+   font-size: 1.3rem;
+   text-transform: uppercase;
+   letter-spacing: 1.3px;
+   font-weight: bold;
+   transition: .2s;
+   background-color: transparent;
+   outline: none;
+   padding: 8px;
+   cursor: pointer;
+   border: 2px solid rgb(11, 56, 102);
+   color: rgb(209, 204, 204);
+}
+
+.form > form > button:hover {
+  color: aqua;
+}
+
+
+/* blockinfo */
+
+.blockinfo {
+  width: 60%;
+  min-width: 450px;
+  padding: 10px;
+  margin: 20px auto;
+  border: 2px solid rgb(11, 56, 102);
+}
+
+.blockinfo span {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.3px;
+  color: rgb(185, 189, 190);
+  transition: .2s;
+}
+
+.blockinfo span:hover {
+  color: rgb(197, 178, 9);
+}
+
+.blockinfo p {
+  color: rgb(175, 175, 175);
+  letter-spacing: 1.1px;
+  word-wrap: break-word;
+}
+
+/*buttons*/
+.buttons {
+   text-align: center;
+
+}
+
+.buttons > button {
+   margin: 0 15px;
+   font-size: 1.4rem;
+   font-weight: bold;
+   background-color: transparent;
+   outline: none;
+   border: 3px solid rgb(11, 56, 102);
+   color: rgb(200, 208, 211);
+   cursor: pointer;
+   transition: .2s;
+}
+.buttons > button:hover {
+  transform: scale(1.03);
+  color: aqua;
+}
+
+.header {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header h3 {
+  color: rgb(197, 178, 9);
+  font-size: 1.6rem;
+  letter-spacing: 1.5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* transactions */
+.transactions {
+  width: 55%;
+  min-width: 450px;
+  padding: 10px;
+  margin: 20px auto;
+  border: 2px solid rgb(11, 56, 102);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.transaction {
+   cursor: pointer;
+   border: 1px solid grey;
+   padding: 5px;
+   margin: 2px 0;
+   transition: .2s;
 }
 
-.App-link {
-  color: #61dafb;
+.transaction:hover {
+  transform: scale(1.01);
+  background-color: rgba(52, 61, 67, 0.2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.transaction span {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: rgb(226, 224, 224);
+
+}
+
+.transaction > p{
+  word-wrap: break-word;
+  font-size: 1.1rem;
+  letter-spacing: 1.1px;
+  color: rgb(180, 180, 180);
+}
+
+/*singletransaction */
+.singletransaction {
+  width: 60%;
+  min-width: 450px;
+  padding: 10px;
+  margin: 20px auto;
+  border: 2px solid rgb(11, 56, 102);
+}
+
+.singletransaction span {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.3px;
+  color: rgb(185, 189, 190);
+  transition: .2s;
+}
+
+.singletransaction span:hover {
+  color: rgb(197, 178, 9);
+}
+
+.singletransaction p {
+  color: rgb(175, 175, 175);
+  letter-spacing: 1.1px;
+  word-wrap: break-word;
 }
